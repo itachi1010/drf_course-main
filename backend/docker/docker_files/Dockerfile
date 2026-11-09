@@ -5,8 +5,8 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 RUN set -e; \
     apt-get update ;\
-    apt-get -y install netcat ;\
-    apt-get -y install gettext ;
+    apt-get -y install netcat-openbsd gettext
+
 
 RUN mkdir /code
 COPY . /code/
